@@ -21,7 +21,7 @@ A função não precisa considerar vogais maiúsculas (A, E, I, O, U) ou com ace
 
 ```
 print(trocar_vogais('tédio')) 
-# imprime tédio
+# imprime téd!#
 
 print(trocar_vogais('Amanhã')) 
 # imprime Am@nhã
