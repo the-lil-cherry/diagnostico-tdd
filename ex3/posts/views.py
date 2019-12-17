@@ -16,8 +16,6 @@ def mostrar_formulario(request):
 
 def mostrar_home(request):
     posts = Post.objects.all()
-    args = {
-        'posts':posts
-    }
+    
 
-    return render(request, 'index.html', args)
+    return render(request, 'index.html', posts)

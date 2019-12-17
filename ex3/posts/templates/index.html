@@ -12,11 +12,12 @@
         <a class="navbar-brand">Meu Blog</a>
     </nav>
     <section class="container">        
+        {% for item in posts %}
         <div class="card mb-3">
             <div class="card-body">
-                <h5 class="card-title">{% post.titulo %}</h5>
-                <p class="card-text">{% post.conteudo %}</p>
-                <p class="card-text">{% post.autor %}</p>
+                <h5 class="card-title">{{ item.titulo }}</h5>
+                <p class="card-text">{{ item.conteudo }}</p>
+                <p class="card-text">{{ item.autor }}</p>
             </div>
         </div>
         {% endfor %}
